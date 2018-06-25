@@ -1,10 +1,12 @@
 const bubbleSort = list => {
 
     let swapped;
+    let operationCounter = 0;
 
     do {
         swapped = false;
         for (let i = 0; i < list.length - 1; i++) {
+            operationCounter++; 
             if (list[i] > list[i + 1]) {
                 //if a swap is needed, add a placeholder to hold the value that will be overwritten.
                 let temp = list[i + 1];
@@ -16,6 +18,7 @@ const bubbleSort = list => {
         }
 
     } while (swapped);
+    console.log(operationCounter);
     return list;
 }
 
