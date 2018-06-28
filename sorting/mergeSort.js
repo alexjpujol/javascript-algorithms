@@ -34,7 +34,7 @@ const merge = (left, right) => {
         }
     }
 
-    //if one of the arrays runs out before the other, then attach the remainder of the longer array to results
+    //if one of the arrays runs out before the other, then attach the remainder of the longer array to resul
     return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
 }
 
