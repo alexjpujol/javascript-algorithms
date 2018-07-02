@@ -43,4 +43,20 @@ class Tree {
             }
         }
     }
+
+    size() {
+        if (!this.root) {
+            return 0;
+        }
+
+        let nodeCounter = 0;
+
+        
+    }
 }
+
+const tree = new Tree();
+tree.add(2);
+tree.add(1);
+tree.add(3);
+console.log(tree);
